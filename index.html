@@ -1,16 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>rock paper scissors</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="wrapper" id="blur">
+        <header>
+            <h1>rock paper scissors</h1>
+        </header>
+
+        <div id="results">
+            <div id="showComputerChoice" class=""></div>
+            <i class="userScoreboardColor">computer</i>
+            <div id="computerScore">0</div>
+
+            <div id="userScore">0</div>
+            <i class="userScoreboardColor">you</i>
+            <div id="showUserChoice" class=""></div>
+        </div>
+
+        <div id="round-container">
+            <p id="round-result"></p>
+        </div>
+
+        <div class="container">
+            <button id="rock-button" class="glow"><img src="photos/rockcopy-removebg-preview.png" alt="a rock"></button>
+            <button id="paper-button" class="glow"><img src="photos/paper.png" alt="paper"></button>
+            <button id="scissors-button" class="glow"><img src="photos/Scissor-Transparent-Isolated-Images-PNG.png"
+                    alt="scissors"></button>
+        </div>
+
+    </div>
+
+    <div id="popup">
+        <h1 id="game-result"></h1>
+        <a href="#" onclick="blurAndPopup()" id="restart-button">RESTART</a>
+    </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
